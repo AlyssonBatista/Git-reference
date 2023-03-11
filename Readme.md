@@ -1,5 +1,3 @@
-#Referência de linhas de comandos usadas no git
-
 # Introdução 
 
 > Primeiro de tudo é abrir a pasta onde você quer desenvolver seu projeto, clicar com o botão direito e clicar em "abrir com **git bash**. 
@@ -22,5 +20,15 @@
 
 # Adicionando arquivos e fazendo as configurações iniciais do git
 
+   ![alt text](https://github.com/AlyssonBatista/Git-reference/blob/master/est%C3%A1gios.png)
+
 |    **comando**     |         **O que faz**             |       
 |----------------|-------------------------------|
+| ```git add index.html ```|Adiciona o arquivo index ao staging area, ele não está no git ainda|
+|```git add```|Adiciona todos os arquivos ao staging area|
+|```git config --global user.name "O seu nome"```|Configura o git com o meu nome ***(essa etapa só precisa ser feita uma vez, com isso todos os projetos que você versionar terão o seu nome)***.|
+|```git config --global user.email "digite o seu email aqui"```|Configura o git com meu email ***(essa etapa só precisa ser feita uma, com isso todos os projetos que você versionar terão o seu email)***.|
+|```git config --list```| Lista todas as configurações que eu tenho no meu git|
+|```git commit -m "Adicionei o arquivo index.html"```|Faz com que o arquivo saia da staging area e vá para  .git directory|
+
+
