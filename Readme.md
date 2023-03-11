@@ -7,5 +7,5 @@
 
 
 ```
-# Isto está formatado como código
+// 
 ```
