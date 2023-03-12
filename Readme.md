@@ -25,10 +25,22 @@
 |    **comando**     |         **O que faz**             |       
 |----------------|-------------------------------|
 | ```git add index.html ```|Adiciona o arquivo index ao staging area, ele não está no git ainda|
-|```git add```|Adiciona todos os arquivos ao staging area|
+|```git add .```|Adiciona todos os arquivos ao staging area|
 |```git config --global user.name "O seu nome"```|Configura o git com o meu nome ***(essa etapa só precisa ser feita uma vez, com isso todos os projetos que você versionar terão o seu nome)***.|
 |```git config --global user.email "digite o seu email aqui"```|Configura o git com meu email ***(essa etapa só precisa ser feita uma, com isso todos os projetos que você versionar terão o seu email)***.|
 |```git config --list```| Lista todas as configurações que eu tenho no meu git|
 |```git commit -m "Adicionei o arquivo index.html"```|Faz com que o arquivo saia da staging area e vá para  .git directory|
+
+# Ver log de arquivos
+
+|    **comando**     |         **O que faz**             |       
+|----------------|-------------------------------|
+|```git log```| Vai retornar um histórico de todos os commits que eu fiz(**para sair da tela do git log digite q**)|
+|```git diff```| Mostra todas as mudanças que eu fiz no código do meu arquivo. Compara os arquivos do working directory com staging area|
+|```git diff index.html```|Mostra as mudanças que eu fiz num arquivo específico.|
+|```git diff --staged```|Mostra todas as mudanças que eu fiz no código do meu arquivo. Compara os arquivos do  staging area  com  .git directory|
+
+>OBS: Quando editamos um arquivo que já foi "commitado" ele volta para working directory . Para que ele seja versionado novamente ele precisa voltar para staging area e depois “commitamos” de novo para .git directory
+
 
 
