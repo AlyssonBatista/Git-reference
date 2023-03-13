@@ -6,8 +6,8 @@
 
 
 
-|    **comando**     |         **O que faz**             |       
-|----------------|-------------------------------|
+|    **Comando**     |         **O que faz**        |       
+|--------------------|------------------------------|
 |```Mkdir```|Cria uma pasta em um local específico.|
 |```cd (nome do projeto)```| Abre a pasta projeto ```(nome do projeto)```|
 |```cd..```| Volta para o diretório anterior ao atual|
@@ -21,9 +21,9 @@
 # Adicionando arquivos e fazendo as configurações iniciais do git
 
    ![alt text](https://github.com/AlyssonBatista/Git-reference/blob/master/est%C3%A1gios.png)
-
-|    **comando**     |         **O que faz**             |       
-|----------------|-------------------------------|
+   
+|    **Comando**     |         **O que faz**        |       
+|--------------------|------------------------------|
 | ```git add index.html ```|Adiciona o arquivo index ao staging area, ele não está no git ainda|
 |```git add .```|Adiciona todos os arquivos ao staging area|
 |```git config --global user.name "O seu nome"```|Configura o git com o meu nome ***(essa etapa só precisa ser feita uma vez, com isso todos os projetos que você versionar terão o seu nome)***.|
@@ -33,8 +33,8 @@
 
 # Ver log de arquivos
 
-|    **comando**     |         **O que faz**             |       
-|----------------|-------------------------------|
+|    **Comando**     |         **O que faz**        |       
+|--------------------|------------------------------|
 |```git log```| Vai retornar um histórico de todos os commits que eu fiz(**para sair da tela do git log digite q**)|
 |```git diff```| Mostra todas as mudanças que eu fiz no código do meu arquivo. Compara os arquivos do working directory com staging area|
 |```git diff index.html```|Mostra as mudanças que eu fiz num arquivo específico.|
@@ -42,5 +42,12 @@
 
 >OBS: Quando editamos um arquivo que já foi "commitado" ele volta para working directory . Para que ele seja versionado novamente ele precisa voltar para staging area e depois “commitamos” de novo para .git directory
 
+# Voltando no tempo
+
+|    **Comando**     |         **O que faz**        |       
+|--------------------|------------------------------|
+|```git log --name-status```|Mostra todos os commits e os arquivos adicionados modificados e os nomes dos arquivos.|
+|```git diff 0293135ab070db24b3738f1402bc31f7976677d4```|Mostra o que tem no commit atual, ou commit específico, com o primeiro commit. Caso não queira todos os dígitos, só precisa copiar os 7 primeiros.|
+|```git diff 5434707 68f2908```| Compara as mudanças que estão em um commit com outro.|
 
 
