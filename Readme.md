@@ -26,6 +26,7 @@
 |--------------------|------------------------------|
 | ```git add index.html ```|Adiciona o arquivo index ao staging area, ele não está no git ainda.|
 |```git add .```|Adiciona todos os arquivos ao staging area.|
+|```git add --all```| Todas as ações que estiverem no working directore são adicionadas para o staging area. Funciona da mesma forma que ```git add .```. |
 |```git config --global user.name "O seu nome"```|Configura o git com o meu nome ***(essa etapa só precisa ser feita uma vez, com isso todos os projetos que você versionar terão o seu nome)***.|
 |```git config --global user.email "digite o seu email aqui"```|Configura o git com meu email ***(essa etapa só precisa ser feita uma, com isso todos os projetos que você versionar terão o seu email)***.|
 |```git config --list```| Lista todas as configurações que eu tenho no meu git|
@@ -57,5 +58,11 @@
 |```rm style.css```| Remove o arquivo do staging area ou working directory.|
 | ```git rm style.css```|  Remove o arquivo do git directore.|
 
+# Ignorando arquivos 
 
+|    **Comando**     |         **O que faz**        |       
+|--------------------|------------------------------|
+|```echo "node_modules" >> .gitignore```| Cria a pasta ```.gitignore``` e adicona node_modules ao ```.gitignore```. A pasta node_modules ficará oculta e não vai pertencer ao projeto.|
+| ```cat .gitignore```|  Ver o que tem dentro do ```.gitignore```|
+| ```vim .gitignore```|  Edita o ```.gitignore``` e adiciona algum arquivo que eu queira ocultar. Para salvar e sair digite ```:wq``` ou ```:x```ou ```:wqa```|
 
