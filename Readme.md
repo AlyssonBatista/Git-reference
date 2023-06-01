@@ -62,7 +62,7 @@
 
 |    **Comando**     |         **O que faz**        |       
 |--------------------|------------------------------|
-|```echo "node_modules" >> .gitignore```| Cria a pasta ```.gitignore``` e adicona node_modules ao ```.gitignore```. A pasta node_modules ficará oculta e não vai pertencer ao projeto.|
+|```echo "node_modules" >> .gitignore```| Cria o arquivo(pode criar manualmente no vs code) ```.gitignore``` e adicona node_modules ao ```.gitignore```. A pasta node_modules ficará oculta e não vai pertencer ao projeto.|
 | ```cat .gitignore```|  Ver o que tem dentro do ```.gitignore```|
 | ```vim .gitignore```|  Edita o ```.gitignore``` e adiciona algum arquivo que eu queira ocultar. Para salvar e sair digite ```:wq``` ou ```:x```ou ```:wqa```|
 |```git rm -rf  node_modules/ --cached```| Remove um arquivo indesejado do working directore ou staging area sem que eu exclua da minha pasta local.|
