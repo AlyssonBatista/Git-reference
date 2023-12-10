@@ -78,6 +78,7 @@
 |```git branch ```| Lista todas branchs disponíveis.|
 |```git branch nomeDaBranch```|Cria uma branch com base na branch atual.|
 |```git branch -m novoNomeDaBranch```|Renomeia a branch atual para ```novoNomeDaBranch```.|
+|```git branch -D nomeDaBranch ```| Remover uma branch.|
 |```git checkout nomeDaBranch```|Troca da branch atual para a branch ```nomeDaBranch``` .|
 |```git checkout -b nomeDaBranch```|Cria outra branch e troca da branch atual para ```nomeDaBranch``` .|
 |```git checkout --orphan nomeDaBranch```|Cria uma branch vazia.(teste usando ```git log```). ***JAMAIS FAZER O MERGE DESSA BRANCH NA MASTER OU NA DEV, POIS PODE OCORRER CONFLITO*** .|
