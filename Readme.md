@@ -58,6 +58,9 @@
 |--------------------|------------------------------|
 |```rm style.css```| Remove o arquivo do staging area ou working directory.|
 | ```git rm style.css```|  Remove o arquivo do git directore.|
+|```git rm -rf  node_modules/ --cached```| Remove um arquivo indesejado do working directore ou staging area sem que eu exclua da minha pasta local.|
+| ```git rm -rf```|  Remove todos os arquivo do git directore ou staging area.(testar isso depois).|
+
 
 # Ignorando arquivos 
 
@@ -66,7 +69,6 @@
 |```echo "node_modules" >> .gitignore```| Cria o arquivo(pode criar manualmente no vs code) ```.gitignore``` e adicona node_modules ao ```.gitignore```. A pasta node_modules ficará oculta e não vai pertencer ao projeto.|
 | ```cat .gitignore```|  Ver o que tem dentro do ```.gitignore```|
 | ```vim .gitignore```|  Edita o ```.gitignore``` e adiciona algum arquivo que eu queira ocultar. Para salvar e sair digite ```:wq``` ou ```:x```ou ```:wqa```|
-|```git rm -rf  node_modules/ --cached```| Remove um arquivo indesejado do working directore ou staging area sem que eu exclua da minha pasta local.|
 
 
 # Branchs
@@ -74,5 +76,12 @@
 |    **Comando**     |         **O que faz**        |       
 |--------------------|------------------------------|
 |```git branch ```| Lista todas branchs disponíveis.|
-|```git branch nomeDaBranch```|Cria uma branch.|
+|```git branch nomeDaBranch```|Cria uma branch com base na branch atual.|
+|```git branch -m novoNomeDaBranch```|Renomeia a branch atual para ```novoNomeDaBranch```.|
 |```git checkout nomeDaBranch```|Troca da branch atual para a branch ```nomeDaBranch``` .|
+|```git checkout -b nomeDaBranch```|Cria outra branch e troca da branch atual para ```nomeDaBranch``` .|
+|```git checkout --orphan nomeDaBranch```|Cria uma branch vazia.(teste usando ```git log```). ***JAMAIS FAZER O MERGE DESSA BRANCH NA MASTER OU NA DEV, POIS PODE OCORRER CONFLITO*** .|
+|```git merge nomeDaBranch ```| Na branch atual será feito a união da branch atual com a branch ```nomeDaBranch```.|
+
+
+OBS: Criar uma branch chamada dev apartir da branch master e essa branch dev deve utilizada como se fosse a master. Apenas será feita o merge da branch dev na master ao final do desenvolvimento, caso tudo ocorra bem.
