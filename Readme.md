@@ -37,6 +37,7 @@
 |    **Comando**     |         **O que faz**        |       
 |--------------------|------------------------------|
 |```git log```| Vai retornar um histórico de todos os commits que eu fiz(**para sair da tela do git log digite q**).|
+|```git log --oneline```| Vai retornar um histórico de todos os commits que eu fiz só que de forma mais resulmida(**para sair da tela do git log digite q**).|
 |```git diff```| Mostra todas as mudanças que eu fiz no código do meu arquivo. Compara os arquivos do working directory com staging area.|
 |```git diff index.html```|Mostra as mudanças que eu fiz num arquivo específico.|
 |```git diff --staged```|Mostra todas as mudanças que eu fiz no código do meu arquivo. Compara os arquivos do  staging area  com  .git directory.|
