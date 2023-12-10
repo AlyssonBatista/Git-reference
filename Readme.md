@@ -68,3 +68,11 @@
 | ```vim .gitignore```|  Edita o ```.gitignore``` e adiciona algum arquivo que eu queira ocultar. Para salvar e sair digite ```:wq``` ou ```:x```ou ```:wqa```|
 |```git rm -rf  node_modules/ --cached```| Remove um arquivo indesejado do working directore ou staging area sem que eu exclua da minha pasta local.|
 
+
+# Branchs
+
+|    **Comando**     |         **O que faz**        |       
+|--------------------|------------------------------|
+|```git branch ```| Lista todas branchs disponíveis.|
+|```git branch nomeDaBranch```|Cria uma branch.|
+|```git checkout nomeDaBranch```|Troca da branch atual para a branch ```nomeDaBranch``` .|
