@@ -1,9 +1,6 @@
 # Introdução 
 
 > Primeiro de tudo é abrir a pasta onde você quer desenvolver seu projeto, clicar com o botão direito e clicar em "abrir com **git bash**. 
->
->*OBS*: Provavelmente tem uma maneira de acessar uma pasta direto do terminal, mas, eu ainda não sei como fazer isso.
-
 
 
 |    **Comando**     |         **O que faz**        |       
