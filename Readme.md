@@ -80,6 +80,7 @@
 |```git checkout nomeDaBranch```|Troca da branch atual para a branch ```nomeDaBranch``` .|
 |```git checkout -b nomeDaBranch```|Cria outra branch e troca da branch atual para ```nomeDaBranch``` .|
 |```git checkout -b nome-branch-local origin/nome-branch-remota```|Criar branch local com mesmo nome da branch remota e automaticamente puxa o código da github .|
+|```git pull origin nome-da-branch-remota```|Atualiza a branch local(que tem o mesmo nome) com a branch remota.|
 |```git checkout --orphan nomeDaBranch```|Cria uma branch vazia.(teste usando ```git log```). ***JAMAIS FAZER O MERGE DESSA BRANCH NA MASTER OU NA DEV, POIS PODE OCORRER CONFLITO*** .|
 |```git merge nomeDaBranch ```| Na branch atual será feito a união da branch atual com a branch ```nomeDaBranch```.|
 
