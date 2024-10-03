@@ -85,5 +85,7 @@
 |```git pull origin nome-da-branch-remota```|Atualiza a branch local(que tem o mesmo nome) com a branch remota.|
 |```git checkout --orphan nomeDaBranch```|Cria uma branch vazia.(teste usando ```git log```). ***JAMAIS FAZER O MERGE DESSA BRANCH NA MASTER OU NA DEV, POIS PODE OCORRER CONFLITO*** .|
 |```git merge nomeDaBranch ```| Na branch atual será feito a união da branch atual com a branch ```nomeDaBranch```.|
+|```git stash```| Se por acaso você iniciou alguma edição em alguma branch que não deveria, mas não quer perder o contéudo adicionado. O ```git stash``` salva momentaneamnte toda a edição até você criar outra branch e adicionar o que foi salvo para a nova branch.|
+|```git stash pop```|Assim que o comando ```git stash``` for feito e a branch for criada utilize esse comando com adição de pop no final para adicionar o que foi salvo para nova branch.|
 
 OBS: Criar uma branch chamada dev a partir da branch master e essa branch dev deve utilizada como se fosse a master. Apenas será feita o merge da branch dev na master ao final do desenvolvimento, caso tudo ocorra bem.
