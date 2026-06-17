@@ -57,6 +57,7 @@
 | ```git rm style.css```|  Remove o arquivo do git directore.|
 |```git rm -rf  node_modules/ --cached```| Remove um arquivo indesejado do working directore ou staging area sem que eu exclua da minha pasta local.|
 | ```git rm -rf```|  Remove todos os arquivo do git directore ou staging area.(testar isso depois).|
+| ```git rm -r --cached node_modules```|  removendo um arquivo do git mesmo ele estando no .gitignore(exemplo removendo o node_modules)|
 
 
 # Ignorando arquivos 
